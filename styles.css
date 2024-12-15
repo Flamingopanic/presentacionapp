@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(90deg, rgba(101,72,205,1) 0%, rgba(61,155,189,1) 35%, rgba(200,91,206,1) 100%);
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  main {
+    padding: 20px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #qr-code {
+    display: block; /* Permite el margen automático */
+    margin: 0 auto; /* Centra horizontalmente */
+    background-color: lightgray; /* Opcional para visualizar */
+}
+
+  /* Sección del carrusel */
+#carrusel {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 200px; 
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  /* Estilo para la sección funcionalidad */
+#funcionalidades {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card para el contenedor resumen */
+.resumen {
+    background-color: #aaaaaa1f; /* Fondo blanco para la "card" */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 0 auto; /* Centrar la sección */
+}
+
+/* Contenedor de las cards usando grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 0 auto; /* Centra la sección */
+    padding-bottom: 40px;
+    padding-top: -50px;
+}
+
+/* Estilo para las tarjetas individuales */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Para asegurar que las tarjetas ocupen todo el espacio posible */
+}
+
+/* Estilo para los títulos de cada card */
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    }
+}

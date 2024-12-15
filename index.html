@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi App - Página de Descarga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>RegisApp</h1>
+    <p>Descubre y descarga nuestra app desde aquí.</p>
+  </header>
+  <main>
+    <div class="resumen">
+    <section id="funcionalidades">
+        <h2>Resumen de Funcionalidades</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Registro rápido</h3>
+          </div>
+          <div class="card">
+            <h3>Escaneo de códigos QR</h3>
+          </div>
+          <div class="card">
+            <h3>Manejo de usuarios</h3>
+          </div>
+          <div class="card">
+            <h3>Recuperación de contraseña</h3>
+          </div>
+          <div class="card">
+            <h3>Generación de códigos QR</h3>
+          </div>
+          <div class="card">
+            <h3>Registro de asistencia</h3>
+          </div>
+        </div>
+    </div>
+      </section>    
+    <section id="carrusel">
+        <h2>Un vistazo a nuestra app</h2>
+        <div class="carousel-container">
+          <button class="carousel-button prev" aria-label="Anterior">❮</button>
+          <div class="carousel-track">
+            <img src="https://i.imgur.com/1ImuqF8.png" alt="Captura de pantalla 1" class="carousel-slide">
+            <img src="https://i.imgur.com/ZAgBwy8.png" alt="Captura de pantalla 2" class="carousel-slide">
+            <img src="https://i.imgur.com/wlGXiRu.png" alt="Captura de pantalla 3" class="carousel-slide">
+            <img src="https://i.imgur.com/QTlQQsX.png" alt="Captura de pantalla 4" class="carousel-slide">
+            <img src="https://i.imgur.com/DTRL8YG.png" alt="Captura de pantalla 5" class="carousel-slide">
+            <img src="https://i.imgur.com/adFfHAm.png" alt="Captura de pantalla 6" class="carousel-slide">
+            <img src="https://i.imgur.com/1VgtnF7.png" alt="Captura de pantalla 7" class="carousel-slide">
+          </div>
+          <button class="carousel-button next" aria-label="Siguiente">❯</button>
+        </div>
+      </section>      
+    <section id="descarga">
+      <h2>Descargar la App</h2>
+      <p id="mensaje-dispositivo"></p>
+      <button id="boton-descarga" style="display: none;">Descargar APK</button>
+      <canvas id="qr-code" style="display: none;"></canvas><br><br>
+    </section>
+    <br><br><br><br>
+  </main>
+  
+  <footer>
+    <p>© 2024 RegisApp. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Incluir la librería de QRCode -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+  <!-- Incluir tu archivo JavaScript personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
