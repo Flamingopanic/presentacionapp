@@ -111,7 +111,6 @@ body {
     gap: 20px; /* Espacio entre las tarjetas */
     margin: 0 auto; /* Centra la sección */
     padding-bottom: 40px;
-    padding-top: -50px;
 }
 
 /* Estilo para las tarjetas individuales */
