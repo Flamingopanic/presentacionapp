@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const botonDescarga = document.getElementById('boton-descarga');
     const qrCodeCanvas = document.getElementById('qr-code');
     const mensajeDispositivo = document.getElementById('mensaje-dispositivo');
-    const apkUrl = "https://drive.google.com/uc?id=1JmmwyuDNe-j91LLIceVzlFrTw03KvQMs&export=download"; 
+    const apkUrl = "https://drive.google.com/uc?id=1XCyZ-F7z1lBrjyPeD-9k53FNaIc4g9fk&export=download"; 
   
     if (/mobile|android|iphone|ipad|ipod/.test(userAgent)) {
       mensajeDispositivo.textContent = "Estás accediendo desde un dispositivo móvil.";
