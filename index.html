@@ -1,76 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RegisApp - Página de Descarga</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>RegisApp</h1>
-    <p>Descubre y descarga nuestra app desde aquí.</p>
-  </header>
-  <main>
-    <div class="resumen">
-    <section id="funcionalidades">
-        <h2>Resumen de Funcionalidades</h2>
-        <div class="card-container">
-          <div class="card">
-            <h3>Registro rápido</h3>
+<section id="carrusel">
+  <h2>Un vistazo a nuestra app</h2>
+  <div class="carousel-container">
+      <button class="carousel-button prev" aria-label="Anterior">❮</button>
+      <div class="carousel-track">
+          <!-- Imágenes del carrusel -->
+          <img src="https://i.imgur.com/1ImuqF8.png" alt="Captura de pantalla 1" class="carousel-slide">
+          <img src="https://i.imgur.com/ZAgBwy8.png" alt="Captura de pantalla 2" class="carousel-slide">
+          <img src="https://i.imgur.com/wlGXiRu.png" alt="Captura de pantalla 3" class="carousel-slide">
+          <img src="https://i.imgur.com/QTlQQsX.png" alt="Captura de pantalla 4" class="carousel-slide">
+          <img src="https://i.imgur.com/DTRL8YG.png" alt="Captura de pantalla 5" class="carousel-slide">
+          <img src="https://i.imgur.com/adFfHAm.png" alt="Captura de pantalla 6" class="carousel-slide">
+          <img src="https://i.imgur.com/1VgtnF7.png" alt="Captura de pantalla 7" class="carousel-slide">
+          <!-- Video de Vimeo -->
+          <div class="carousel-slide">
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/1039863660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                          style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RegisApp">
+                  </iframe>
+              </div>
           </div>
-          <div class="card">
-            <h3>Escaneo de códigos QR</h3>
-          </div>
-          <div class="card">
-            <h3>Manejo de usuarios</h3>
-          </div>
-          <div class="card">
-            <h3>Recuperación de contraseña</h3>
-          </div>
-          <div class="card">
-            <h3>Generación de códigos QR</h3>
-          </div>
-          <div class="card">
-            <h3>Registro de asistencia</h3>
-          </div>
-        </div>
-    </div>
-    </section>    
-    <section id="carrusel">
-        <h2>Un vistazo a nuestra app</h2>
-        <div class="carousel-container">
-          <button class="carousel-button prev" aria-label="Anterior">❮</button>
-          <div class="carousel-track">
-            <img src="https://i.imgur.com/1ImuqF8.png" alt="Captura de pantalla 1" class="carousel-slide">
-            <img src="https://i.imgur.com/ZAgBwy8.png" alt="Captura de pantalla 2" class="carousel-slide">
-            <img src="https://i.imgur.com/wlGXiRu.png" alt="Captura de pantalla 3" class="carousel-slide">
-            <img src="https://i.imgur.com/QTlQQsX.png" alt="Captura de pantalla 4" class="carousel-slide">
-            <img src="https://i.imgur.com/DTRL8YG.png" alt="Captura de pantalla 5" class="carousel-slide">
-            <img src="https://i.imgur.com/adFfHAm.png" alt="Captura de pantalla 6" class="carousel-slide">
-            <img src="https://i.imgur.com/1VgtnF7.png" alt="Captura de pantalla 7" class="carousel-slide">
-            <div style="padding:222.22% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1039863660?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RegisApp"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>         
-          </div>
-          <button class="carousel-button next" aria-label="Siguiente">❯</button>
-        </div>
-      </section>      
-    <section id="descarga">
-      <h2>Descargar la App</h2>
-      <p id="mensaje-dispositivo"></p>
-      <button id="boton-descarga" style="display: none;">Descargar APK</button>
-      <canvas id="qr-code" style="display: none;"></canvas><br><br>
-    </section>
-    <br><br><br><br>
-  </main>
-  
-  <footer>
-    <p>© 2024 RegisApp. Todos los derechos reservados.</p>
-  </footer>
-
-  <!-- Incluir la librería de QRCode -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-
-  <!-- Incluir tu archivo JavaScript personalizado -->
-  <script src="script.js"></script>
-</body>
-</html>
+      </div>
+      <button class="carousel-button next" aria-label="Siguiente">❯</button>
+  </div>
+</section>
