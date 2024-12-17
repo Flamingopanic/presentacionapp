@@ -147,3 +147,9 @@ h3 {
         grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
     }
 }
+
+.carousel-slide iframe {
+  width: 100%;  /* El iframe ocupará todo el ancho disponible */
+  height: auto;  /* La altura será proporcional */
+  border-radius: 15px;  /* Asegura que el video tenga bordes redondeados igual que las imágenes */
+}
